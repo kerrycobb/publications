@@ -1,0 +1,67 @@
+* {font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;}
+
+:root {
+    --gray1: rgb(100, 100, 100);
+    --gray2: rgb(150, 150, 150);
+    --gray3: rgb(200, 200, 200);
+    --gray4: rgb(230, 230, 230);
+}
+
+body {
+    margin: 5px;
+    padding: 0;
+}
+#pubs {
+    display: grid;
+    grid-gap: 5px;
+}
+.pubs-item {
+    display:grid;
+    grid-gap: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: var(--gray4);
+}
+.pubs-journ-year {
+  text-align: right;
+  font-size: .8em;
+  padding-right: 20px;
+}
+.pubs-title {
+    font-size: 1em;
+    padding: 5px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: var(--gray3);
+}
+.pubs-authors {
+    font-size: .8em;
+}
+.pubs-abstr {
+    display: none;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: white;
+}
+.pubs-buttons {
+    display: inline-flex;
+}
+.pubs-buttons a, .pubs-buttons a:visited{
+    color: black;
+    border: 1px solid black;
+    background-color: var(--gray3);
+    padding: 1px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.pubs-buttons a:hover {
+    cursor: pointer;
+    background-color: var(--gray2);
+}
+.pubs-buttons span {
+    font-size: .8em;
+    padding: 10px;
+
+
+}
