@@ -1,0 +1,76 @@
+{font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;}
+
+:root {
+    --titleBackground: rgb(200, 200, 200);
+    --entryBackground: rgb(230, 230, 230);
+    --buttonBackground: DodgerBlue;
+    --buttonHover: RoyalBlue;
+    --outerShadow: rgb(280, 280, 280);
+    --innerShadow: rgb(200, 200, 200);
+}
+
+/* Entries */
+#pubs {
+    display: grid;
+    grid-gap: 6px;
+}
+.pubs-entry {
+    border-radius: 5px;
+    padding: 3px 5px;
+    background-color: var(--entryBackground);
+    box-shadow: 2px 3px var(--outerShadow)
+}
+.pubs-journ-year {
+  text-align: right;
+  font-size: .8em;
+  padding: 0px 3px 1px 0px;
+}
+.pubs-title {
+    font-size: 1em;
+    padding: 3px;
+    background-color: var(--titleBackground);
+}
+.pubs-authors {
+    font-size: .8em;
+    padding: 2px 0px 6px 0px;
+}
+.pubs-abstr {
+    padding: 5px;
+    background-color: white;
+}
+
+/* Buttons */
+.pubs-buttons {
+  width: 100%;
+}
+.pubs-buttons:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.pubs-buttons a {
+  font-size: .8em;
+  cursor: pointer;
+  background-color: var(--buttonBackground);
+  box-shadow: 2px 3px var(--innerShadow);
+  border-radius: 5px 5px 5px 5px;
+  color: white;
+  float: right;
+  padding: 3px 5px;
+  margin: 0px 10px;
+  text-decoration:none
+}
+
+@media screen and (min-width: 450px) {
+  .pubs-buttons a {
+    float: left;
+
+  }
+}
+
+.pubs-buttons a:hover {
+  background-color: var(--buttonHover);
+}
+.pubs-buttons i {
+  margin-right: 5px;
+}

@@ -1,1 +1,1 @@
-# publications-js
+# Publications-js
